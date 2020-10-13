@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'base/css/site.css' %}">
+<title>
+</title>
+</head>
+<body>
+
+<ul>
+    <li><a href="{% url 'index' %}"> Home</a></li>
+    <li >
+        <a href="{% url 'create' %}"> Create Flower</a>
+    </li>
+</ul>
+
+
+     <div id="content">
+	 {% block content %} 
+	 {% endblock %} 
+     </div>
+	 
+</body>
+</html>
+
+
+<footer class="footer"> <!-- here -->
+<div class="container">
+<span class="text-muted">
+Base project for the <a target="_blank" href="h\
+ttps://leanpub.com/django-the-easy-way">"Django - The Easy \
+Way" </a>book.
+</span>
+</div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/a ...
+<script src="https://stackpath.bootstrapcdn ...
